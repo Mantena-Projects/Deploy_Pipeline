@@ -16,5 +16,4 @@ do
         fi
 done
 imageId=$(docker images $1:$latestTag | awk '{print $3}' | sed '1d')
-echo "latest tag is ############: "$latestTag
-echo "latest img is !!!!!!!!!!!!: "$imageId
+echo $imageId
